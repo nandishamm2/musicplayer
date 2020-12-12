@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+
+<div id="songModel" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close song-close">&times;</span>
+        <form id="songform">
+            <label for="sname">Song name :</label><br>
+            <input type="text" id="sname" name="name"><br>
+            <label for="singer">Singer :</label><br>
+            <input type="text" id="singer" name="singer"><br><br>
+            <input type="hidden" id="playid">
+            <input id="addSongForm" type="button" value="Submit">
+        </form>
+        <span class="error-msg"></span>
+    </div>
+</div>
+<div id="playlistModel" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close play-close">&times;</span>
+        <form id="playform">
+            <label for="pname">Playlist name :</label><br>
+            <input type="text" id="pname" name="name"><br><br>
+            <input id="addPlaylistForm" type="button" value="Submit">
+        </form>
+        <span class="error-msg"></span>
+    </div>
+</div>
+<script src="js/index.js"></script>
+</body>
+</html>
